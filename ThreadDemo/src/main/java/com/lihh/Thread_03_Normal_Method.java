@@ -3,9 +3,27 @@ package com.lihh;
 public class Thread_03_Normal_Method {
 
     public static void main(String[] args) throws Exception {
-        testSleep();
-        testYield();
-        testJoin();
+        testMain();
+    }
+
+    public static void testMain() throws InterruptedException {
+        System.out.println("主线程开始了...");
+
+        Thread t = new Thread(() -> {
+            for (int i = 0; i < 10; i++) {
+                try {
+                    Thread.sleep(100);
+                    System.out.println("这是子线程内容..." + (i + 1));
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        t.start();
+        t.join();
+
+        System.out.println("主线程结束了...");
     }
 
 
