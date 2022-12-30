@@ -3,8 +3,8 @@ package com.lihh;
 public class Thread_03_Normal_Method {
 
     public static void main(String[] args) throws Exception {
-//        testSleep();
-//        testYield();
+        testSleep();
+        testYield();
         testJoin();
     }
 
