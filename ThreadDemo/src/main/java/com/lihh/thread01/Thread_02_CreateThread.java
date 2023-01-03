@@ -1,4 +1,4 @@
-package com.lihh;
+package com.lihh.thread01;
 
 import org.junit.jupiter.api.Test;
 
@@ -28,6 +28,12 @@ class MyCall implements Callable<String> {
 }
 
 public class Thread_02_CreateThread {
+
+    @Test
+    public void test01() {
+        // 线程的创建方式2
+        new Thread(new MyRun()).start();
+    }
 
     @Test
     public void test() throws ExecutionException, InterruptedException {

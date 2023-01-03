@@ -1,4 +1,4 @@
-package com.lihh;
+package com.lihh.thread01;
 
 import java.util.concurrent.CountDownLatch;
 

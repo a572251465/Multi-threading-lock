@@ -1,4 +1,4 @@
-package com.lihh;
+package com.lihh.thread01;
 
 public class Thread_04_interrupt_study {
     public static void main(String[] args) throws InterruptedException {

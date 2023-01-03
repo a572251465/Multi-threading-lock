@@ -1,4 +1,4 @@
-package com.lihh;
+package com.lihh.thread01;
 
 public class Thread_08_stop_thread {
 
